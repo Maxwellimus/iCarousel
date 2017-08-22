@@ -1357,6 +1357,9 @@ NSComparisonResult compareViewDepth(UIView *view1, UIView *view2, iCarousel *sel
     self.itemViews = [NSMutableDictionary dictionary];
     self.itemViewPool = [NSMutableSet set];
     self.placeholderViewPool = [NSMutableSet setWithCapacity:_numberOfPlaceholders];
+
+    //reset previousItemIndex
+    _previousItemIndex = -1;
     
     //layout views
     [self setNeedsLayout];
